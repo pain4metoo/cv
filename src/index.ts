@@ -1,2 +1,3 @@
 import "./scss/main.scss";
-import "./ts/header.ts";
+import "./ts/header/nav_menu.ts";
+import "./ts/header/anim_title";
