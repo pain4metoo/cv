@@ -22,3 +22,70 @@ body {
   font-weight: 300;
   color: $color-main;
 }
+
+.header {
+  background-color: $color-bg;
+  min-height: 100vh;
+  position: relative;
+  transition: all 0.5s;
+  &_video_inner {
+    height: 63.3rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  &_video {
+    min-width: 100%;
+    min-height: 100%;
+  }
+  &_style {
+    background-color: #1a1a1a;
+  }
+  &_menu {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    top: 10%;
+    transition: ease-in all 0.5s;
+    z-index: 2;
+    &_inner {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+    &_hiden {
+      opacity: 0;
+      z-index: -1;
+      top: 15%;
+    }
+    &_item {
+      padding-bottom: 1.5rem;
+      text-align: center;
+    }
+    &_link {
+      text-decoration: none;
+      color: $color-main;
+      cursor: pointer;
+    }
+    &_btn {
+      position: fixed;
+      right: 2rem;
+      top: 3rem;
+      cursor: pointer;
+    }
+    &_line {
+      width: 3.5rem;
+      height: 0.05rem;
+      display: block;
+      background-color: $color-main;
+      margin-bottom: 1rem;
+      transition: all 0.5s;
+      &_1 {
+        margin-bottom: 0;
+        transform: rotate(45deg);
+      }
+      &_2 {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
