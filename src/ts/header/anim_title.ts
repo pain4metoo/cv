@@ -19,7 +19,7 @@ function showText(element) {
       ) {
         span.style.color = "#E12179";
       }
-      span.innerHTML = letter !== " " ? letter : "&nbsp;";
+      span.innerHTML = letter;
       span.style.opacity = 0;
       span.style.transitionDelay = 0.15 * i + "s";
       return span;

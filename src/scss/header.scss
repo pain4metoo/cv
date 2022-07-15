@@ -169,13 +169,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.5s;
-    flex-shrink: 1;
-    flex-grow: 0;
+    overflow: hidden;
+    bottom: 0%;
+    transform: translateX(-50%);
     &_link {
       width: 3.5rem;
       height: 3.5rem;
       margin: 0 1rem;
+    }
+    &_anim {
+      position: absolute;
+      bottom: 10%;
+      left: 50%;
+      transition: ease-in all 0.5s;
     }
     &_image {
       width: 100%;

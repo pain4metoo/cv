@@ -13,7 +13,8 @@ const social: HTMLInputElement | null =
 
 const isVisible = () => {
   menu?.classList.toggle("header_menu_hiden");
-  social?.classList.toggle("header_menu_hiden");
+  social?.classList.toggle("header_menu_hiden")
+  social?.classList.toggle("header_social_anim")
   header?.classList.toggle("header_style");
   mainBlock?.classList.toggle("header_hide");
   video?.classList.toggle("header_hide");
